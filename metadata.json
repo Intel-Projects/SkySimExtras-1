@@ -1,0 +1,9 @@
+{
+    "entry": "main.js",
+    "name":"SkySim QOL",
+    "description": "A bunch of QOL features for SkySim",
+    "creator": "mistyy#4982, Uhut#3552",
+    "requires": ["Vigilance","SettingsManager", "RichPresence", "sleep"],
+    "version": "0.0.0",
+    "$schema": "../CTAutocomplete-2.0.4/metadata.json"
+}
