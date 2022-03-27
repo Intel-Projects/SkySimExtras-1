@@ -1,3 +1,4 @@
+//NER tessellator constances
 const drawName = (entity, red, green, blue) => {
     GL11.glBlendFunc(770, 771);
     GL11.glEnable(GL11.GL_BLEND);

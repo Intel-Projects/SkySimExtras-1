@@ -1,3 +1,4 @@
+//oringinal
 import config from "../inmenu/gui"
 var locked_slots = [true, true, true, true, true, true, true, true, true]
 const test = () => {

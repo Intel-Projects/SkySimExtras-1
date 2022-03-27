@@ -30,3 +30,5 @@ register("renderFood", (args) => {
         cancel(args)
     }
 })
+register("renderEntity", (one, two, three, event) => {
+})
