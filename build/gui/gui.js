@@ -11,7 +11,7 @@ import {
     @SliderProperty
 } from '../../../Vigilance/index';
 
-@Vigilant("SSE", "SSE", {
+@Vigilant("SkySimExtras", "SSE", {
     getCategoryComparator: () => (a, b) => {
         const categories = ["General", "Slayers", "Displays", "QOL", "Other"];
         return categories.indexOf(a.name) - categories.indexOf(b.name);
@@ -56,7 +56,7 @@ class Config {
         subcategory: "Chat",
         placeholder: "_rank_ _name_ > _message_",
     })
-    namemessage = "";
+    namemessage = "_rank_ _name_ > _message_";
     @SwitchProperty({
         name: "Toggle useless chat messages",
         description: "Toggles useless chat information, such as blocks in way, etc.",
@@ -94,7 +94,7 @@ class Config {
         subcategory: "Message",
         placeholder: "&r&l_rarity_! &r&7(&e_drop_&7)&r &b(+${mf} Magic Find!)",
     })
-    rngmessage = "";
+    rngmessage = "&r&l_rarity_! &r&7(&e_drop_&7)&r &b(+_mf_ Magic Find!)";
     @SwitchProperty({
         name: "Soulcry Alert",
         description: "Alerts you when your soulcry ability needs to be used again.",
@@ -138,7 +138,7 @@ class Config {
     })
     disableArmor = true
     @SwitchProperty({
-        name: "Displays",
+        name: "Toggle Food Bar",
         description: "Toggles the visibility of the minecraft Food Bar",
         category: "Displays",
         subcategory: "Render"
@@ -154,15 +154,6 @@ class Config {
     // QOL
 
     // ---------------------------------------------------------------
-    @SliderProperty({
-        name: "Better Term Delay",
-        description: "Better terminator/right click Delay",
-        category: "QOL",
-        subcategory: "Better Term",
-        min: "1",
-        max: "10"
-    })
-    termDelay = "2";
     @SwitchProperty({
         name: "Better Term",
         description: "Better terminator click",
@@ -170,6 +161,14 @@ class Config {
         subcategory: "Better Term"
     })
     betterterm = true
+    @SwitchProperty({
+        name: "Better Term With Anything",
+        description: "Better Terminator Clicks on any weapon (MOST LIKELY BANNABLE)",
+        category: "QOL",
+        subcategory: "Better Term"
+    })
+    bettertermanything = true
+    
     @SwitchProperty({
         name: "anti KB",
         description: "Removes knockback",
@@ -201,7 +200,7 @@ class Config {
         category: "Other",
         subcategory: "Discord",
     })
-    rpcMessage = "";
+    rpcMessage = "Example RPC message";
     @SwitchProperty({
         name: 'Join Message',
         description: 'Toggles where the SSE join message is sent when joining a game, would reccomend to leave on.',
@@ -216,6 +215,7 @@ class Config {
         subcategory: 'Displays'
     })
     bettersb = true
+
     @TextProperty({
         name: "RPC image",
         description: "Image key used by discord RPC (Available: sse_1024)",
@@ -223,7 +223,14 @@ class Config {
         subcategory: "Discord",
         placeholder: "sse_1024",
     })
-    image_key = "";
+    image_key = "sse_1024";
+    @TextProperty({
+        name: "API key",
+        description: "API key for skysim, used for API features",
+        category: "Other",
+        subcategory: "API"
+    })
+    apiKey = "";    
 
 
 }

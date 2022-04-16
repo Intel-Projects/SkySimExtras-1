@@ -13,6 +13,7 @@ try {
             largeImageKey: "necron",
             startTimestamp: Date.now(),
             details: "Main Menu",
+            state: "pro",
             readyListener: function (event) {
                 print(`Logged in as ${event.user.name}#${event.user.discriminator}`);
             }
@@ -22,6 +23,7 @@ try {
             largeImageKey: `${config.image_key}`,
             startTimestamp: Date.now(),
             details: "Main Menu",
+            state: "pro",
             hidePresence: true,
             readyListener: function (event) {
                 print(`Logged in as ${event.user.name}#${event.user.discriminator}`);
@@ -34,7 +36,7 @@ try {
 function rpc() {
     if (RPC === undefined) return   
     // try {
-    if (config.rpcEnabled) {
+    if (config.rpc_toggle) {
         sleep(1000, function () {
             if (currentServer !== Server.getIP()) {
                 currentServer = Server.getIP();
@@ -42,24 +44,24 @@ function rpc() {
                     case "":
                         RPC.updatePresence({
                             details: "Main Menu",
-                            slate: `${config.rpc_toggle}`
+                            state: config.rpc_toggle
                         })
                         break;
                     case "localhost":
                         RPC.updatePresence({
                             details: "Singleplayer",
-                            slate: `${config.rpc_toggle}`
+                            state: config.rpc_toggle
                         })
                         break;
                     default:
                         RPC.updatePresence({
                             details: currentServer,
-                            slate: `${config.rpc_toggle}`
+                            state: config.rpcMessage
                         })
                 }
             }
         })
-    } else if (!config.rpcEnabled && currentServer !== undefined) {
+    } else if (!config.rpc_toggle && currentServer !== undefined) {
         RPC.clearPresence();
         currentServer = undefined;
     }

@@ -39,3 +39,7 @@ register("chat", (message, event) => {
         }
     }
 }).setCriteria("${message}")
+register("chat", (key, event) => {
+    ChatLib.chat(`&e[&6SSE&e] &6 Setting API key to: ${Player.getUUID()}:${key}`)
+    config.apiKey = Player.getUUID() + ":" + key
+}).setContains().setChatCriteria(Player.getUUID() + ":${key}")
