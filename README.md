@@ -1,4 +1,4 @@
 # SkySimExtras
 
 
-Skysim extras mod by Uhut, updates asap
+Skysim extras mod by Me, updates asap
