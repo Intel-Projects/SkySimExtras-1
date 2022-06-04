@@ -9,7 +9,7 @@ import {
     @TextProperty,
     @Vigilant,
     @SliderProperty
-} from '../../../Vigilance/index';
+} from '../../Vigilance/index';
 
 @Vigilant("SkySimExtras", "SSE", {
     getCategoryComparator: () => (a, b) => {

@@ -1,9 +1,9 @@
 {
-    "entry": "main.js",
-    "name":"SkySim QOL",
+    "entry": "index.js",
+    "name":"SkySim Extras",
     "description": "A bunch of QOL features for SkySim",
-    "creator": "mistyy#4982, Uhut#3552",
-    "requires": ["Vigilance","SettingsManager", "RichPresence", "sleep", "request", "PogData"],
-    "version": "0.0.0",
-    "$schema": "../CTAutocomplete-2.0.4/metadata.json"
+    "creator": "Uhut#3552",
+    "requires": ["Vigilance", "RichPresence", "requestV2"],
+    "version": "0.3.1",
+    "$schema": "../CTAutocomplete/metadata.json"
 }

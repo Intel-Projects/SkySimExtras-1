@@ -2,7 +2,7 @@
 [general]
 
 	[general.chat]
-		"color_for_chat_messages_(usernames)" = ""
+		"color_for_chat_messages_(usernames)" = "_rank_ _name_ > _message_"
 		toggle_custom_chat = false
 		toggle_useless_chat_messages = false
 
@@ -12,24 +12,21 @@
 [slayers]
 
 	[slayers.message]
-		slayer_rng_message = ""
+		slayer_rng_message = "&r&l_rarity_! &r&7(&e_drop_&7)&r &b(+_mf_ Magic Find!)"
 		soulcry_alert = false
 
 [other]
 
-	[other.on_game_open]
-		auto_join_skysim = true
-
 	[other.discord]
 		rpc_toggle = true
-		rpc_message = "coding is fun"
-		rpc_image = ""
+		rpc_message = "Example RPC message"
+		rpc_image = "sse_1024"
 
 	[other.world_load]
 		join_message = true
 
 	[other.api]
-		api_key = "76543db3-e993-4b2f-acb1-d964d6844a21:dGQEcHNxcF9nDA=="
+		api_key = ""
 
 	[other.displays]
 		better_scoreboard = true
@@ -40,16 +37,14 @@
 		toggle_health_bar = true
 		toggle_food_bar = true
 		toggle_armor_bar = true
-		displays = true
 		toggle_xp_bar = true
 
 [qol]
 
 	[qol.better_term]
-		better_term_delay = 2
 		better_term = true
-		better_term_with_anything = false
+		better_term_with_anything = true
 
 	[qol.use_at_your_own_risk]
-		anti_kb = false
+		anti_kb = true
 

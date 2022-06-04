@@ -1,4 +1,3 @@
-//some Packets, credits to NER for saving me research
 const BP = Java.type("net.minecraft.util.BlockPos");
 
 const C08PacketPlayerBlockPlacement = Java.type("net.minecraft.network.play.client.C08PacketPlayerBlockPlacement");
