@@ -1,3 +1,11 @@
+//----------------------------------------------------------------------------------------------
+//This file is obfuscated because it uses my public IP to make requests to SSE's data servers.
+//All that happens Right Now is a GET requests that pulls data and check if there's a new update
+//This later will be used to show all user using SSE and more helpful and nice features.
+//Please do not de-obfuscate this as I like to keep my public life private and you will get
+//blacklisted from SSE if you get my IP. Thanks for supporting SSE! -Uhut june 4th, 11:51am 2022
+//----------------------------------------------------------------------------------------------
+
 function n(j, C) {
     const b = x();
     n = function (Q, D) {
