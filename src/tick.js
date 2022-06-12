@@ -4,6 +4,4 @@ import commands from "./methods/commands";
 import render from "./methods/render";
 import chat from "./methods/chat";
 import request from "../../requestV2/index"
-import { API } from "./methods/api";
-
-API()
+import "./methods/api"

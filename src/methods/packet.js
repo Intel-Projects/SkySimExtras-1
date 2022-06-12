@@ -15,10 +15,13 @@ export default new class Packets {
         if (packet.class.getSimpleName() === "S12PacketEntityVelocity" || packet.class.getSimpleName() === "S27PacketExplosion" && config.antikb) cancel(event)
     }
     clickHandler(event) {
+        var clicked = false
         this.noclick.forEach((item) => {
             if (!config.betterterm || !Player.getHeldItem()?.getName()?.removeFormatting()?.includes(item)) return
-            new Client.sendPacket(new C08PacketPlayerBlockPlacement(new BP(-1, -1, -1), 255, Player.getHeldItem()?.getItemStack(), 0, 0, 0))
+            Client.sendPacket(new C08PacketPlayerBlockPlacement(new BP(-1, -1, -1), 255, Player.getHeldItem()?.getItemStack(), 0, 0, 0))
             cancel(event)
+            clicked = true
         })
+        if (config.bettertermanything && !clicked) {Client.sendPacket(new C08PacketPlayerBlockPlacement(new BP(-1, -1, -1), 255, Player?.getHeldItem()?.getItemStack(), 0, 0, 0));cancel(event)}
     }
 }

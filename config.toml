@@ -7,7 +7,7 @@
 		toggle_useless_chat_messages = false
 
 	[general.render]
-		toggle_other_users = true
+		toggle_other_users = false
 
 [slayers]
 
@@ -34,16 +34,16 @@
 [displays]
 
 	[displays.render]
-		toggle_health_bar = true
-		toggle_food_bar = true
-		toggle_armor_bar = true
-		toggle_xp_bar = true
+		toggle_health_bar = false
+		toggle_food_bar = false
+		toggle_armor_bar = false
+		toggle_xp_bar = false
 
 [qol]
 
 	[qol.better_term]
 		better_term = true
-		better_term_with_anything = true
+		better_term_with_anything = false
 
 	[qol.use_at_your_own_risk]
 		anti_kb = true

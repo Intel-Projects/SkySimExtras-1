@@ -22,6 +22,7 @@ export default new class Discord {
                 hidePresence: this.rpc,
                 readyListener: function (event) {
                     print(`Connected as ${event.user.name}#${event.user.discriminator}`)
+                    print(event)
                 }
             })
         } catch (e) {
