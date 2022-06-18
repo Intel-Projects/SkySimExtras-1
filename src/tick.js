@@ -5,3 +5,4 @@ import render from "./methods/render";
 import chat from "./methods/chat";
 import request from "../../requestV2/index"
 import "./methods/api"
+// omg so cool
